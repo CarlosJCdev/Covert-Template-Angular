@@ -17,7 +17,10 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  /* con el uso del hash, prevenimos que cuando subamos nuestra pagina a algun servidor
+  agregue un #, el cual le inidica al navegador que lo que sigue del # es una parte de la ruta del index.html, esto es 
+  cuando no tenemos acceso al ht.access */
+  imports: [RouterModule.forRoot(routes, {useHash: true})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

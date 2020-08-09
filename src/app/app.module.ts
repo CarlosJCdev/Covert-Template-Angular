@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule} from '@angular/common/http';
 //Rutas
 import { AppRoutingModule } from './app-routing.module';
 
@@ -23,7 +24,9 @@ import { ItemComponent } from './pages/item/item.component';
   // a qui se colocan los módulos, todos los modulos estan en los imports
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    //Nos ayuda a realizar peticiones a servicios, Put, Get, Delete, etc
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
