@@ -1,7 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+//Rutas
 import { AppRoutingModule } from './app-routing.module';
+
+//Componentes
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
@@ -18,6 +20,7 @@ import { ItemComponent } from './pages/item/item.component';
     AboutComponent,
     ItemComponent
   ],
+  // a qui se colocan los módulos, todos los modulos estan en los imports
   imports: [
     BrowserModule,
     AppRoutingModule
