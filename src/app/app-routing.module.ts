@@ -9,10 +9,10 @@ Si se ingresa cualquier ruta desconocida usamos **, con patmatch es cualquier bu
 redireccionamos a '' que es el portafolioComponent
 */
 const routes: Routes = [
-  {path: '', component: PortafolioComponent},
+  {path: 'home', component: PortafolioComponent},
   {path: 'about', component: AboutComponent},
   {path: 'item', component: ItemComponent},
-  {path: '**', pathMatch: 'full', redirectTo: ''}
+  {path: '**', pathMatch: 'full', redirectTo: 'home'}
 
 ];
 
