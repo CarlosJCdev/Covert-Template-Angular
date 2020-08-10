@@ -19,7 +19,12 @@ export class ProductosService {
     .subscribe((resp: Producto[])=>{
         console.log(resp)
       this.prod= resp;
-      this.cargando= false;
+
+      //la variable cargando espera 2 segundos para cambiar el estado a false y ocultar el spinner
+      setTimeout(() => {
+         this.cargando= false;
+      }, 2000);
+     
     })
   }
 }

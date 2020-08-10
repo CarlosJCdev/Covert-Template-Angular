@@ -1,6 +1,20 @@
 <section class="ae-container-fluid ae-container-fluid--inner rk-portfolio">
     
-      <div class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4">
+
+
+  <div align="center" *ngIf="productosS.cargando">
+    <h2>Cargando...</h2>
+    <div class="loader">
+      <div class="inner one"></div>
+      <div class="inner two"></div>
+      <div class="inner three"></div>
+    </div>
+    <p>Espere por favor</p>
+  </div>
+
+
+
+      <div *ngIf="!productosS.cargando" class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4">
         
         <a *ngFor="let producto of productosS.prod"
          routerLink="/item" class="rk-item ae-masonry__item">
@@ -10,8 +24,7 @@
             <p>{{producto.categoria}}</p>
           </div>
         </a>
-          
     
       </div>
     </section>
-    
+
