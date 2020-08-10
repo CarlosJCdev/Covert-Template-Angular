@@ -2,82 +2,16 @@
     
       <div class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4">
         
-        <a routerLink="/item" class="rk-item ae-masonry__item"><img src="assets/img/project-1.jpg" alt="">
+        <a *ngFor="let producto of productosS.prod"
+         routerLink="/item" class="rk-item ae-masonry__item">
+         <img src="assets/productos/{{producto.url}}.jpg" alt="">
           <div class="item-meta">
-            <h2>Gestor web de tareas</h2>
-            <p>Angular</p>
-          </div></a>
+            <h2>{{producto.titulo}}</h2>
+            <p>{{producto.categoria}}</p>
+          </div>
+        </a>
           
-          <a href="portfolio-item.html" class="rk-item ae-masonry__item"><img src="assets/img/project-2.jpg" alt="">
-          <div class="item-meta">
-            <h2>Home de cursos online</h2>
-            <p>Angular</p>
-          </div></a>
-          
-          <a href="portfolio-item.html" class="rk-item ae-masonry__item"><img src="assets/img/project-3.jpg" alt="">
-          <div class="item-meta">
-            <h2>Buscador de letras</h2>
-            <p>Angular</p>
-          </div></a>
-          
-          <a href="portfolio-item.html" class="rk-item ae-masonry__item"><img src="assets/img/project-4.jpg" alt="">
-          <div class="item-meta">
-            <h2>Cotizador de Seguros</h2>
-            <p>React</p>
-          </div></a>
-          
-          <a href="portfolio-item.html" class="rk-item ae-masonry__item"><img src="assets/img/project-5.jpg" alt="">
-          <div class="item-meta">
-            <h2>Consulta Valor de Criptomonedas</h2>
-            <p>Angular</p>
-          </div></a>
-          
-          <a href="portfolio-item.html" class="rk-item ae-masonry__item"><img src="assets/img/project-6.jpg" alt="">
-          <div class="item-meta">
-            <h2>Calculo de Prestamos</h2>
-            <p>React</p>
-          </div></a>
-          
-          <a href="portfolio-item.html" class="rk-item ae-masonry__item"><img src="assets/img/project-7.jpg" alt="">
-          <div class="item-meta">
-            <h2>Sistema de consulta de datos API</h2>
-            <p>Spring</p>
-          </div></a>
-          
-          <a href="portfolio-item.html" class="rk-item ae-masonry__item"><img src="assets/img/project-8.jpg" alt="">
-          <div class="item-meta">
-            <h2>Consulta de datos, Login</h2>
-            <p>Firebase</p>
-          </div></a>
-          
-          <a href="portfolio-item.html" class="rk-item ae-masonry__item"><img src="assets/img/project-9.jpg" alt="">
-          <div class="item-meta">
-            <h2>Controlador de Versiones</h2>
-            <p>GitHub</p>
-          </div></a>
-          
-          <a href="portfolio-item.html" class="rk-item ae-masonry__item"><img src="assets/img/project-10.jpg" alt="">
-          <div class="item-meta">
-            <h2>Uso de Contenedores</h2>
-            <p>Docker</p>
-          </div></a>
-          
-          <a href="portfolio-item.html" class="rk-item ae-masonry__item"><img src="assets/img/project-11.jpg" alt="">
-          <div class="item-meta">
-            <h2>Diseño UI/UX</h2>
-            <p>Css, Sass, JavaScript</p>
-          </div></a>
-          
-          <a href="portfolio-item.html" class="rk-item ae-masonry__item"><img src="assets/img/project-12.jpg" alt="">
-          <div class="item-meta">
-            <h2>Diseño Móvil</h2>
-            <p>React Native</p>
-          </div></a>
-          
-          <a href="portfolio-item.html" class="rk-item ae-masonry__item"><img src="assets/img/project-13.jpg" alt="">
-          <div class="item-meta">
-            <h2>Diseño Móvil</h2>
-            <p>Ionic</p>
-          </div></a>
+    
       </div>
     </section>
+    
