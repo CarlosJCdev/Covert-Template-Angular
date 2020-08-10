@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { InfoPaginaService } from 'src/app/services/info-pagina.service';
 
 @Component({
   selector: 'app-header',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+                    //Nombre propuedad    Nombre del Servicio
+  constructor(public infoPaginaS: InfoPaginaService) { }
+      //Ahora ya podemos usar este servicio y pasarlo como interpolación en el HTML
 
   ngOnInit(): void {
   }
