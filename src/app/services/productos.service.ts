@@ -56,7 +56,6 @@ export class ProductosService {
       //Aplicamos la busqueda
       this.filtrarProductos(busqueda);
     }
-
   }
   private filtrarProductos(busqueda: string){
     /* console.log(this.prod); */

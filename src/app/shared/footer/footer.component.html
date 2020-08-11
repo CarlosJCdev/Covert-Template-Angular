@@ -2,31 +2,21 @@
     <div class="ae-grid ae-grid--collapse">
       <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-left">
         <ul class="rk-menu rk-footer-menu">
-          <li class="rk-menu__item"><a href="about.html" class="rk-menu__link">About</a>
+          <li class="rk-menu__item"><a class="rk-menu__link">Programación</a>
           </li>
-          <li class="rk-menu__item"><a href="documentation.html" class="rk-menu__link">Docs</a>
+          <li class="rk-menu__item"><a  class="rk-menu__link">Diseño</a>
           </li>
-          <li class="rk-menu__item"><a href="contact.html" class="rk-menu__link">Contact</a>
+          <li class="rk-menu__item"><a  class="rk-menu__link">Bases de Datos</a>
           </li>
         </ul>
         <p class="rk-footer__text rk-footer__copy ">
           <span class="ae-u-bold">© </span>
-          <span class="ae-u-bolder">{{ anio }} {{infoPaginaS.info.title}} PORTFOLIO </span>All Right Reserved.
+          <span class="ae-u-bolder">{{ anio }} {{infoPaginaS.info.title}} Portafolio </span>All Right Reserved.
         </p>
       </div>
 
       <div class="ae-grid__item item-lg-4 au-xs-ta-center">
-        <a href="#0" class="rk-social-btn ">
-          <svg>
-            <use xlink:href="assets/img/symbols.svg#icon-facebook"></use>
-          </svg>
-        </a>
-        <a href="#0" class="rk-social-btn ">
-          <svg>
-            <use xlink:href="assets/img/symbols.svg#icon-twitter"></use>
-          </svg>
-        </a>
-        <a href="#0" class="rk-social-btn ">
+        <a target="_blank" [href]="infoPaginaS.info.linKedin" class="rk-social-btn ">
           <svg>
             <use xlink:href="assets/img/symbols.svg#icon-pinterest"></use>
           </svg>
@@ -45,8 +35,8 @@
             <a href="mailTo: {{infoPaginaS.info.email}} " class="rk-dark-color ">{{infoPaginaS.info.email}}</a>
           </span>
         </p>
-        <p class="rk-footer__text rk-footer__by">Theme by 
-          <a href="http://pixeden.com" class="ae-u-bolder">{{infoPaginaS.info.title}}.</a>
+        <p class="rk-footer__text rk-footer__by">Created by
+          <a href="https://github.com/CarlosJCdevm" class="ae-u-bolder">{{infoPaginaS.info.title}}.</a>
         </p>
       </div>
 
