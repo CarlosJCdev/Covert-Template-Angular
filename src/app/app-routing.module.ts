@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { PortafolioComponent } from './pages/portafolio/portafolio.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ItemComponent } from './pages/item/item.component';
+import { SearchComponent } from './pages/search/search.component';
 
 /*En esta constante de tipo array definimos las rutas que la app manejara 
 Si se ingresa cualquier ruta desconocida usamos **, con patmatch es cualquier busqueda, y 
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path: 'home', component: PortafolioComponent},
   {path: 'about', component: AboutComponent},
   {path: 'item/:id', component: ItemComponent},
+  {path: 'search/:busqueda', component: SearchComponent},
   {path: '**', pathMatch: 'full', redirectTo: 'home'}
 
 ];

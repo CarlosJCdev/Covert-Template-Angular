@@ -1,0 +1,13 @@
+<div class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4">
+        
+    <a *ngFor="let producto of productoService.productoFiltrado"
+     [routerLink]="['/item', producto.cod]" class="rk-item ae-masonry__item">
+     <!-- Cuando queremos pasar parametros/ argumentos dinamicamente
+       debemos usar [routerLink]=" " -->
+     <img src="assets/productos/{{producto.url}}.jpg" alt="">
+      <div class="item-meta">
+        <h2>{{producto.titulo}}</h2>
+        <p>{{producto.categoria}}</p>
+      </div>
+    </a>
+  </div>
